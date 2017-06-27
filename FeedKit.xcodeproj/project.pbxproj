@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		43B5FA781F02AB1C0073B4A0 /* CustomInvalidDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B5FA771F02AB1C0073B4A0 /* CustomInvalidDateFormatter.swift */; };
 		A01F67A01D1692B20038910F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01F679C1D16922D0038910F /* ViewController.swift */; };
 		A01F67A11D16931A0038910F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A01F67991D1691510038910F /* Main.storyboard */; };
 		A0370EC21CEF9EF6009583A3 /* FeedKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A0EF4E1B1CE86F6100C52142 /* FeedKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -546,6 +547,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		43B5FA771F02AB1C0073B4A0 /* CustomInvalidDateFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomInvalidDateFormatter.swift; sourceTree = "<group>"; };
 		A01F679A1D1691510038910F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A01F679C1D16922D0038910F /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		A0370EB91CEF9D5A009583A3 /* FeedKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FeedKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -841,6 +843,7 @@
 				A0DE1D571EF1BC9600E944D6 /* RFC3339DateFormatter.swift */,
 				A0DE1D581EF1BC9600E944D6 /* RFC822DateFormatter.swift */,
 				A0DE1D591EF1BC9600E944D6 /* String + dateFromSpec.swift */,
+				43B5FA771F02AB1C0073B4A0 /* CustomInvalidDateFormatter.swift */,
 			);
 			name = Dates;
 			path = Sources/FeedKit/Dates;
@@ -2004,6 +2007,7 @@
 				A0DE1E561EF1BC9600E944D6 /* iTunesOwner.swift in Sources */,
 				A0DE1E9E1EF1BC9600E944D6 /* MediaRating.swift in Sources */,
 				A0DE1EFE1EF1BC9600E944D6 /* RSSFeedSkipHour.swift in Sources */,
+				43B5FA781F02AB1C0073B4A0 /* CustomInvalidDateFormatter.swift in Sources */,
 				A0DE1EF61EF1BC9600E944D6 /* RSSFeedItemSource.swift in Sources */,
 				A0DE1F221EF1BC9600E944D6 /* XMLFeedParser.swift in Sources */,
 				A0DE1E461EF1BC9600E944D6 /* DublinCoreNamespace.swift in Sources */,

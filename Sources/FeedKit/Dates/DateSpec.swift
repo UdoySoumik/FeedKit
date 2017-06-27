@@ -58,4 +58,8 @@ enum DateSpec {
      */
     case iso8601
     
+    /**
+     For specific use
+    */ 
+    case customInvalid
 }

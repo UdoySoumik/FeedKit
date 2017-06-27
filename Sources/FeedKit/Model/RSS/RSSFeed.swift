@@ -38,7 +38,7 @@ import Foundation
  contains information about the channel (metadata) and its contents.
  
  */
-public class RSSFeed {
+open class RSSFeed {
         
     /**
      

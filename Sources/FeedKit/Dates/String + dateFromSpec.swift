@@ -41,6 +41,7 @@ extension String {
         case .rfc822:   return RFC822DateFormatter().date(from: self)
         case .rfc3999:  return RFC3339DateFormatter().date(from: self)
         case .iso8601:  return ISO8601DateFormatter().date(from: self)
+        case .customInvalid: return CustomInvalidDateFormatter().date(from: self)
         }
     }
     

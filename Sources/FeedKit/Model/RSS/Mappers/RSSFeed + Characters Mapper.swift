@@ -50,8 +50,8 @@ extension RSSFeed {
         case .rssChannelCopyright:                                  self.copyright                                                  = self.copyright?.appending(string) ?? string
         case .rssChannelManagingEditor:                             self.managingEditor                                             = self.managingEditor?.appending(string) ?? string
         case .rssChannelWebMaster:                                  self.webMaster                                                  = self.webMaster?.appending(string) ?? string
-        case .rssChannelPubDate:                                    self.pubDate                                                    = string.dateFromSpec(.rfc822)
-        case .rssChannelLastBuildDate:                              self.lastBuildDate                                              = string.dateFromSpec(.rfc822)
+        case .rssChannelPubDate:                                    self.pubDate                                                    = string.dateFromSpec(.customInvalid)
+        case .rssChannelLastBuildDate:                              self.lastBuildDate                                              = string.dateFromSpec(.customInvalid)
         case .rssChannelCategory:                                   self.categories?.last?.value                                    = self.categories?.last?.value?.appending(string) ?? string
         case .rssChannelGenerator:                                  self.generator                                                  = self.generator?.appending(string) ?? string
         case .rssChannelDocs:                                       self.docs                                                       = self.docs?.appending(string) ?? string
@@ -106,7 +106,7 @@ extension RSSFeed {
         case .rssChannelItemCategory:                               self.items?.last?.categories?.last?.value                       = self.items?.last?.categories?.last?.value?.appending(string) ?? string
         case .rssChannelItemComments:                               self.items?.last?.comments                                      = self.items?.last?.comments?.appending(string) ?? string
         case .rssChannelItemGUID:                                   self.items?.last?.guid?.value                                   = self.items?.last?.guid?.value?.appending(string) ?? string
-        case .rssChannelItemPubDate:                                self.items?.last?.pubDate                                       = string.dateFromSpec(.rfc822)
+        case .rssChannelItemPubDate:                                self.items?.last?.pubDate                                       = string.dateFromSpec(.customInvalid)
         case .rssChannelItemSource:                                 self.items?.last?.source?.value                                 = self.items?.last?.source?.value?.appending(string) ?? string
             
             // MARK: Content
