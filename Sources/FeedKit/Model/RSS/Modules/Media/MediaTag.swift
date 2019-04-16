@@ -66,7 +66,7 @@ extension MediaTag {
     
     static func tagsFrom(string: String) -> [MediaTag]? {
         
-        return string.components(separatedBy: ",").flatMap({ (value) -> MediaTag? in
+        return string.components(separatedBy: ",").compactMap({ (value) -> MediaTag? in
             
             let mediaTag = MediaTag()
             let components = value.components(separatedBy: ":")
